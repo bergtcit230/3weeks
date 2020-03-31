@@ -1,0 +1,175 @@
+     /*  General Use*/
+*{
+    box-sizing: border-box;
+}
+     body {
+         background-image: url("PNGs/1x/backgroundNew.png");
+         background-repeat: repeat-y;
+         background-size: contain;
+         background-position: center;
+         width: 100%;
+         margin: 0;
+         overflow-x: hidden;
+     }
+
+     img {
+         max-width: 100%;
+     }
+
+     div {
+         display: flex;
+         flex-flow: column;
+         flex-direction: row-reverse;
+
+     }
+
+     .bg-move,
+     #dark,
+     #intro {
+         z-index: 2;
+     }
+
+
+     /*For Mobile Use */
+     #car {
+         width: 25%;
+         margin-left: 21vw;
+         position: sticky;
+         top: 50vh;
+         z-index: 1;
+     }
+
+     .sign {
+         width: 45%;
+         margin-right: 3vw;
+     }
+
+     #intro {
+         margin-right: 5vw;
+     }
+
+     #care {
+         width: 45%;
+     }
+
+     .addSpace {
+         height: 75vh;
+     }
+
+     .section {
+         position: relative;
+         max-width: 100%;
+         min-height: 100vh;
+         padding: 0;
+         margin: auto;
+     }
+
+     .section.bg-static {
+         background-image: url(PNGs/1x/wet.png);
+         background-size: contain;
+         background-repeat: no-repeat;
+         background-position: center;
+     }
+
+     .section .bg-move {
+         position: absolute;
+         top: 0;
+         bottom: 0;
+         right: auto;
+         width: 43%;
+         background-image: url(PNGs/1x/clouds2.png);
+         background-size: contain;
+         background-position: center;
+         background-repeat: no-repeat;
+     }
+
+     .addMobile {
+         height: 50vh;
+     }
+
+     .addDesktop {
+         height: 0;
+     }
+
+     #cones {
+        margin-right: 7.5vw;
+    }
+
+    #stop {
+        margin-bottom: 0;
+    }
+
+    a{
+       margin-left: 53vw; 
+    }
+ 
+     /* For Desktop Use */
+     @media only screen and (min-width: 900px) {
+         #car {
+             width: 25%;
+             margin-left: 20vw;
+             top: 0vh;
+             margin-top: -150px;
+         }
+
+         .sign {
+             width: 30%;
+             margin: 2vw;
+         }
+
+         #intro {
+             margin-right: 4vw;
+             margin-top: -10vh;
+         }
+
+         #care {
+             width: 24%;
+         }
+
+         .addSpace {
+             height: 100vh;
+         }
+
+         .section {
+             position: relative;
+             max-width: 100%;
+             min-height: 100vh;
+             padding: 0;
+             margin: auto;
+         }
+
+         .section.bg-static {
+             background-image: url("PNGs/1x/wet.png");
+             background-size: contain;
+             background-repeat: no-repeat;
+             background-position: center;
+         }
+
+         .section .bg-move {
+             position: absolute;
+             top: 0;
+             bottom: 0;
+             right: auto;
+             width: 70%;
+             background-image: url("PNGs/1x/clouds2.png");
+             background-size: contain;
+             background-position: center;
+             background-repeat: no-repeat;
+         }
+
+         .addMobile {
+             height: 0;
+         }
+
+         #stop {
+             margin-bottom: -22vh;
+         }
+
+         a{
+            margin-left: 60vw;
+         }
+         #conclusion{
+            margin-bottom: -75vh;
+         }
+
+     }
